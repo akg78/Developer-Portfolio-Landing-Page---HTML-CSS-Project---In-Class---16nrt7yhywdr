@@ -1,1 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;1,400&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: white;
+}
+
+/* Hero Section */
+
+.hero{
+    background-image: url(/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero div{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 470px;
+}
+h2{
+    font-size: 24px;
+    margin-right: 470px;
+    font-weight: 400;
+}
+span{
+    font-size: 50px;
+    font-weight: 400;
+}
+h1{
+    font-size: 48px;
+    margin-right: 110px;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+/* Black Box Section */
+
+.black-box h3{
+    text-align: center;
+    background-color: #000;
+    font-size: 80px;
+    font-weight: 400;
+}
+.black-box span{
+    font-size: 96px;
+    color: white;
+}
+
+/* Card Container Section using Grid */
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 20px;
+}
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    max-width: 340px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    padding: 20px;
+    color: black;
+}
+.card-content{
+    text-align: center;
+    color: black;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Bottom Section  */
+
+.bottom-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 150px;
+}
+.contact-me{
+    background-color: green;
+    padding: 20px;
+}
+
+.about-us{
+    background-color: red;
+    padding: 20px;
+}
+
+/* responsive */
+
+@media (max-width: 786px){
+    .hero{
+        min-height: 40vh;
+    }
+
+    .hero div{
+        font-size: 24px;
+    }
+
+    .bottom-section{
+        flex-direction: column;
+    }
+}
 
